@@ -207,14 +207,45 @@ if (isridentasSkaicius > 0 && isridentasSkaicius <= maksimalusSkaicius) {
 console.log('-----------');
 console.log('9 uzduotis');
 
+const pradiniaiMetai = 1896;
+const tikrinamiMetai = 3004;
+const metuSkirtumas = tikrinamiMetai - pradiniaiMetai
+const metuIntervalas = 4;
 
+if (metuSkirtumas % metuIntervalas === 0) {
+    const olimpiniuNumeris = (metuSkirtumas / metuIntervalas) + 1;
+    console.log(olimpiniuNumeris)
+} else {
+    console.log('Metai neolimpiniai');
+}
 
 /*  10 uzduotis
     Petras išėjo iš namų, kai laikrodis rodė v1 valandų ir m1 minučių. 
-    Į gimnaziją Petro kelionė trunka m2 minučių. Parašykite programą, kuri ekrane parodytų pranešimą apie tai, ar Petras nepavėluos į pamoką, prasidedančią v valandų ir m minučių. 
+    Į gimnaziją Petro kelionė trunka m2 minučių. 
+    Parašykite programą, kuri ekrane parodytų pranešimą apie tai, ar Petras nepavėluos į pamoką, prasidedančią v valandų ir m minučių. 
     Pasitikrinkite: jei v1 = 8, m1 = 29, m2 = 43, v = 9, m = 5, turi būti: Petras į pamoką pavėluos; 
     jei v1 = 8, m1 = 29, m2 = 23, v = 9, m = 5, turi būti: Petras į pamoką nepavėluos.
 */
 
 console.log('-----------');
 console.log('10 uzduotis');
+
+const kelionesLaikas = 23;
+const dabarValandu = 8;
+const dabarMinuciu = 29;
+const pamokosPradziosValanda = 9;
+const pamokosPradziosMinutes = 5;
+
+const isejimoLaikas = dabarValandu * 60 + dabarMinuciu;
+const pamokosPradziosLaikas = pamokosPradziosValanda * 60 + pamokosPradziosMinutes;
+
+if (pamokosPradziosLaikas - isejimoLaikas >= kelionesLaikas) {
+    console.log('Petras į pamoką nepavėluos');
+} else {
+    console.log('Petras į pamoką pavėluos');
+}
+
+
+
+
+

@@ -148,16 +148,8 @@ Raskite visus mūsų eros keliamuosius metus.
 console.log('10. ----------');
 
 for (let i = 0; i < 2022; i++) {
-    if (i % 4 !== 0) continue;
-    if ((i % 100 === 0) && (i % 4 === 0)) continue;
-    console.log(i);
+    if ((i % 4 === 0 && i % 100 !== 0) || i % 400 === 0) {
+        console.log(i); 
+    }
 }
-
-
-
-//for (let i = 0; i < 2022; i++) {
-//    if (i % 4 === 0) {
-//       console.log(i); 
-//    } 
-//}
 

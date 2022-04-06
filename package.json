@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./april-1-nd.js",
+    "dev": "nodemon ./april-1-functions-nd.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
